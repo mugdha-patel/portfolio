@@ -50,18 +50,31 @@
 }
 @media (max-width: 768px) {
   .header-main .navbar {
-    padding: 20px 0;
+    padding: 0;
   }
 }
 .header-main .navbar .navbar-toggler .fa {
   color: #6e07f3;
 }
-.header-main .logo-img {
-  width: 150px;
+.header-main .navbar .navbar-brand span {
+  font-family: "Euphoria Script", cursive;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 56px;
+  color: #6e07f3;
+  padding: 0;
+  position: relative;
 }
 @media (max-width: 768px) {
-  .header-main .logo-img {
-    width: 100px;
+  .header-main .navbar .navbar-brand span {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 576px) {
+  .header-main .navbar .navbar-brand span {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 .header-main .collapse-section {
@@ -220,12 +233,7 @@
 }
 @media (max-width: 768px) {
   .about-section {
-    padding: 45px 0;
-  }
-}
-@media (max-width: 576px) {
-  .about-section {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 }
 .about-section .title-head .head-divider {
@@ -317,12 +325,7 @@
 }
 @media (max-width: 768px) {
   .skills-section {
-    padding: 45px 0;
-  }
-}
-@media (max-width: 576px) {
-  .skills-section {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 }
 .skills-section .skillz-title h2 {
@@ -444,12 +447,8 @@
 }
 @media (max-width: 768px) {
   .portfolio-section {
-    padding: 45px 0;
-  }
-}
-@media (max-width: 576px) {
-  .portfolio-section {
-    padding: 30px 0;
+    padding: 60px 0;
+    padding-top: 0;
   }
 }
 .portfolio-section .portfolio-title h2 {

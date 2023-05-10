@@ -93,7 +93,7 @@ $fw900: 900;
     padding: 10px 0;
 
     @media (max-width: map-get($mediaSizes, "md")) {
-      padding: 20px 0;
+      padding: 0;
     }
 
     .navbar-toggler {
@@ -101,17 +101,26 @@ $fw900: 900;
         color: $primary;
       }
     }
-  }
 
-  .logo-img {
-    width: 150px;
+    .navbar-brand {
+      span {
+        font-family: $head-font;
+        font-weight: $fw500;
+        font-size: 50px;
+        line-height: 56px;
+        color: $primary;
+        padding: 0;
+        position: relative;
 
-    // TODO remove css
-    // @media (max-width: map-get($mediaSizes, "lg")) {
-    //   width: 150px;
-    // }
-    @media (max-width: map-get($mediaSizes, "md")) {
-      width: 100px;
+        @media (max-width: map-get($mediaSizes, "md")) {
+          font-size: 40px;
+          line-height: 45px;
+        }
+        @media (max-width: map-get($mediaSizes, "sm")) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
     }
   }
 
@@ -275,12 +284,9 @@ $fw900: 900;
   }
 
   @media (max-width: map-get($mediaSizes, "md")) {
-    padding: 45px 0;
+    padding: 60px 0;
   }
 
-  @media (max-width: map-get($mediaSizes, "sm")) {
-    padding: 30px 0;
-  }
 
   .title-head {
     .head-divider {
@@ -370,11 +376,7 @@ $fw900: 900;
   }
 
   @media (max-width: map-get($mediaSizes, "md")) {
-    padding: 45px 0;
-  }
-
-  @media (max-width: map-get($mediaSizes, "sm")) {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   .skillz-title {
@@ -496,11 +498,8 @@ $fw900: 900;
   }
 
   @media (max-width: map-get($mediaSizes, "md")) {
-    padding: 45px 0;
-  }
-
-  @media (max-width: map-get($mediaSizes, "sm")) {
-    padding: 30px 0;
+    padding: 60px 0;
+    padding-top: 0;
   }
 
   .portfolio-title {
@@ -584,7 +583,7 @@ $fw900: 900;
         border-width: 0;
         opacity: 0;
       }
-      &:hover .project-info{
+      &:hover .project-info {
         opacity: 1;
       }
       .project-info {
